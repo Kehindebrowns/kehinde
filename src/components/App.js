@@ -119,7 +119,7 @@ class App extends Component {
       <div>
         <Navbar account={this.state.account} />
         { this.state.loading
-          ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+          ? <div id="loader" className="text-center mt-5"><p>omicollection...</p></div>
           : <Main
               videos={this.state.videos}
               uploadVideo={this.uploadVideo}

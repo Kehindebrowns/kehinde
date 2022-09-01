@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
-import dtube from '../dtube.png'
+import dtube from '../wor.png'
 
 class Navbar extends Component {
 
@@ -13,7 +13,7 @@ class Navbar extends Component {
           rel="noopener noreferrer"
         >
           <img src={dtube} width="30" height="30" className="d-inline-block align-top" alt="DTube logo" />
-          &nbsp;DTube
+          &nbsp;mina
         </a>
         <ul className="navbar-nav px-3">
           <li className="nav-item text-nowrap h5 d-none d-sm-none d-sm-block">
