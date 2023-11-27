@@ -32,7 +32,7 @@ app.get('/get', async (req, res) => {
         const result = await simpleStorage.methods.get().call();
         res.json({ result });
     } catch (error) {
-        res.status(200).json({ error: error.message });
+        res.status(500).json({ error: error.message });
     }
 });
 
@@ -43,7 +43,7 @@ app.post('/set/:value', async (req, res) => {
         await simpleStorage.methods.set(value).send({ from: accounts[0] });
         res.json({ success: true });
     } catch (error) {
-        res.status(200).json({ error: error.message });
+        res.status(500).json({ error: error.message });
     }
 });
 
